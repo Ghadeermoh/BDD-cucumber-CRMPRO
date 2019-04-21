@@ -1,18 +1,18 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/ghadeermoh/eclipse-workspace/CRMBDDFramework/src/main/java/Features/contact .feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("C:/Users/ghadeermoh/eclipse-workspace/CRMBDDFramework/src/main/java/Features/Deals .feature");
 formatter.feature({
   "line": 1,
-  "name": "CRMPRO create contacts",
+  "name": "deal data creation",
   "description": "",
-  "id": "crmpro-create-contacts",
+  "id": "deal-data-creation",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.scenario({
   "line": 2,
-  "name": "CRMPRO create new contact",
+  "name": "CRMPRO create new deal",
   "description": "",
-  "id": "crmpro-create-contacts;crmpro-create-new-contact",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
+  "id": "deal-data-creation;crmpro-create-new-deal",
+  "type": "scenario",
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 3,
@@ -26,348 +26,96 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "user enters \"\u003cuser name\u003e\" and \"\u003cpassword\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 6,
-  "name": "user clicks login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "user is in home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user mouseover contacts link and click on new contact",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user enters contact details\"\u003cfirstname\u003e\" and \"\u003clastname\u003e\" and \"\u003cposition\u003e\"",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 12,
-  "name": "",
-  "description": "",
-  "id": "crmpro-create-contacts;crmpro-create-new-contact;",
+  "name": "user enters user name and password",
   "rows": [
     {
       "cells": [
-        "user name",
-        "password",
-        "firstname",
-        "lastname",
-        "position"
-      ],
-      "line": 13,
-      "id": "crmpro-create-contacts;crmpro-create-new-contact;;1"
-    },
-    {
-      "cells": [
         "ghadeermoh",
-        "Ghadeer25",
-        "Ahmed",
-        "mohamed",
-        "IT Manager"
+        "Ghadeer25"
       ],
-      "line": 14,
-      "id": "crmpro-create-contacts;crmpro-create-new-contact;;2"
-    },
-    {
-      "cells": [
-        "ghadeermoh",
-        "Ghadeer25",
-        "Amr",
-        "Diab",
-        "Singer"
-      ],
-      "line": 15,
-      "id": "crmpro-create-contacts;crmpro-create-new-contact;;3"
+      "line": 6
     }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 14,
-  "name": "CRMPRO create new contact",
-  "description": "",
-  "id": "crmpro-create-contacts;crmpro-create-new-contact;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 3,
-  "name": "user launch the CRMPRO Login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 4,
-  "name": "title of page is CRMPRO",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 5,
-  "name": "user enters \"ghadeermoh\" and \"Ghadeer25\"",
-  "matchedColumns": [
-    0,
-    1
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 6,
+  "line": 7,
   "name": "user clicks login button",
   "keyword": "And "
 });
 formatter.step({
-  "line": 7,
+  "line": 8,
   "name": "user is in home page",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 8,
-  "name": "user mouseover contacts link and click on new contact",
-  "keyword": "Then "
-});
-formatter.step({
   "line": 9,
-  "name": "user enters contact details\"Ahmed\" and \"mohamed\" and \"IT Manager\"",
-  "matchedColumns": [
-    2,
-    3,
-    4
-  ],
+  "name": "user mouseover deals link and click on new deal",
   "keyword": "Then "
 });
 formatter.step({
   "line": 10,
-  "name": "close the browser",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_launch_login_page()"
-});
-formatter.result({
-  "duration": 21767808522,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.When_Title_is_CRMRO()"
-});
-formatter.result({
-  "duration": 201668996,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+  "name": "user enters deal details",
+  "rows": [
     {
-      "val": "ghadeermoh",
-      "offset": 13
-    },
-    {
-      "val": "Ghadeer25",
-      "offset": 30
+      "cells": [
+        "test deal",
+        "Excees",
+        "10",
+        "100"
+      ],
+      "line": 11
     }
   ],
-  "location": "LoginStepDefinition.user_enter_user_name_and_password(String,String)"
-});
-formatter.result({
-  "duration": 1552973864,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_click_login_button()"
-});
-formatter.result({
-  "duration": 24658743891,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_is_in_home_page()"
-});
-formatter.result({
-  "duration": 22125515,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.user_mouseover_contacts_link_and_click_on_new_contact()"
-});
-formatter.result({
-  "duration": 7156782771,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Ahmed",
-      "offset": 28
-    },
-    {
-      "val": "mohamed",
-      "offset": 40
-    },
-    {
-      "val": "IT Manager",
-      "offset": 54
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_contact_details_and_and(String,String,String)"
-});
-formatter.result({
-  "duration": 14797493529,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 828617178,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 15,
-  "name": "CRMPRO create new contact",
-  "description": "",
-  "id": "crmpro-create-contacts;crmpro-create-new-contact;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 3,
-  "name": "user launch the CRMPRO Login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 4,
-  "name": "title of page is CRMPRO",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 5,
-  "name": "user enters \"ghadeermoh\" and \"Ghadeer25\"",
-  "matchedColumns": [
-    0,
-    1
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 6,
-  "name": "user clicks login button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 7,
-  "name": "user is in home page",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 8,
-  "name": "user mouseover contacts link and click on new contact",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user enters contact details\"Amr\" and \"Diab\" and \"Singer\"",
-  "matchedColumns": [
-    2,
-    3,
-    4
-  ],
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 10,
-  "name": "close the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_launch_login_page()"
+  "location": "StepDefinition.user_launch_login_page()"
 });
 formatter.result({
-  "duration": 8280886042,
+  "duration": 34849219924,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.When_Title_is_CRMRO()"
+  "location": "StepDefinition.When_Title_is_CRMRO()"
 });
 formatter.result({
-  "duration": 25376640,
+  "duration": 674763680,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "ghadeermoh",
-      "offset": 13
-    },
-    {
-      "val": "Ghadeer25",
-      "offset": 30
-    }
-  ],
-  "location": "LoginStepDefinition.user_enter_user_name_and_password(String,String)"
+  "location": "StepDefinition.user_enters_user_name_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 920092935,
+  "duration": 2489700990,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_click_login_button()"
+  "location": "StepDefinition.user_click_login_button()"
 });
 formatter.result({
-  "duration": 10238333594,
+  "duration": 23788093198,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_is_in_home_page()"
+  "location": "StepDefinition.user_is_in_home_page()"
 });
 formatter.result({
-  "duration": 15052345,
+  "duration": 15887457,
   "status": "passed"
 });
 formatter.match({
-  "location": "LoginStepDefinition.user_mouseover_contacts_link_and_click_on_new_contact()"
+  "location": "StepDefinition.user_mouseover_deals_link_and_click_on_new_deal()"
 });
 formatter.result({
-  "duration": 3891712822,
+  "duration": 5482197267,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "Amr",
-      "offset": 28
-    },
-    {
-      "val": "Diab",
-      "offset": 38
-    },
-    {
-      "val": "Singer",
-      "offset": 49
-    }
-  ],
-  "location": "LoginStepDefinition.user_enters_contact_details_and_and(String,String,String)"
+  "location": "StepDefinition.user_enters_deal_details(DataTable)"
 });
 formatter.result({
-  "duration": 7915092186,
-  "status": "passed"
-});
-formatter.match({
-  "location": "LoginStepDefinition.close_the_browser()"
-});
-formatter.result({
-  "duration": 919165190,
+  "duration": 4783333955,
   "status": "passed"
 });
 });
